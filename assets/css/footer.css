@@ -1,0 +1,211 @@
+
+/* FOOTER ONLY — paste this into your separate footer CSS file.
+   Keeps the existing dark green color and white text. */
+
+footer {
+    display: block;
+    width: 100%;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #1c5036 !important;
+    color: #fff !important;
+    overflow: hidden;
+    border-radius: 0 !important;
+    line-height: 1.45;
+}
+
+footer .footer-container {
+    display: grid !important;
+    grid-template-columns: 220px minmax(300px, 1fr) minmax(390px, 1fr) !important;
+    align-items: center !important;
+    column-gap: 28px !important;
+    width: 100% !important;
+    max-width: 1400px !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 18px 4% !important;
+    box-sizing: border-box !important;
+}
+
+footer .footer-logo {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    align-self: stretch !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+footer .footer-logo img {
+    display: block !important;
+    width: 140px !important;
+    height: 140px !important;
+    max-width: 140px !important;
+    max-height: 140px !important;
+    object-fit: contain !important;
+    border-radius: 50% !important;
+    margin: 0 !important;
+}
+
+footer .footer-links {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+    align-content: center !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 5px 18px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.45 !important;
+}
+
+footer .footer-links a,
+footer .footer-contact,
+footer .footer-contact a {
+    color: #fff !important;
+}
+
+footer .footer-links a {
+    display: inline-block !important;
+    white-space: nowrap;
+}
+
+footer .footer-contact {
+    justify-self: end !important;
+    width: 100%;
+    max-width: 460px;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #fff !important;
+    font-size: 18px !important;
+    line-height: 1.55 !important;
+    overflow-wrap: anywhere;
+}
+
+footer .footer-contact strong {
+    font-weight: 700;
+}
+
+footer .footer-icons {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 18px !important;
+    margin: 8px 0 0 !important;
+    padding: 0 !important;
+}
+
+footer .footer-bottom,
+footer .developer {
+    display: block !important;
+    width: 100% !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    background-color: #1c5036 !important;
+    color: #fff !important;
+    box-sizing: border-box !important;
+}
+
+footer .footer-bottom {
+    padding: 10px 12px !important;
+    border-top: 1px solid rgba(255, 255, 255, .22) !important;
+    text-align: center !important;
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+}
+
+footer .developer {
+    padding: 0 15px 8px !important;
+    text-align: right !important;
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+}
+
+@media (max-width: 1100px) {
+    footer .footer-container {
+        grid-template-columns: 160px minmax(220px, 1fr) minmax(280px, 1fr) !important;
+        column-gap: 20px !important;
+        padding: 22px 4% !important;
+    }
+
+    footer .footer-contact {
+        font-size: 16px !important;
+    }
+
+    footer .footer-links {
+        gap: 10px 14px !important;
+    }
+}
+
+@media (max-width: 900px) {
+    footer .footer-container {
+        grid-template-columns: 150px minmax(0, 1fr) !important;
+        row-gap: 22px !important;
+        padding: 22px 5% !important;
+    }
+
+    footer .footer-logo {
+        grid-row: 1 / span 2;
+    }
+
+    footer .footer-links {
+        justify-content: flex-start !important;
+    }
+
+    footer .footer-contact {
+        justify-self: start !important;
+        max-width: none;
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    footer .footer-container {
+        grid-template-columns: 1fr !important;
+        justify-items: center !important;
+        row-gap: 18px !important;
+        padding: 22px 5% !important;
+        text-align: center !important;
+    }
+
+    footer .footer-logo {
+        grid-row: auto;
+        justify-content: center !important;
+    }
+
+    footer .footer-logo img {
+        width: 125px !important;
+        height: 125px !important;
+        max-width: 125px !important;
+        max-height: 125px !important;
+    }
+
+    footer .footer-links {
+        justify-content: center !important;
+        gap: 9px 16px !important;
+    }
+
+    footer .footer-links a {
+        white-space: normal;
+    }
+
+    footer .footer-contact {
+        justify-self: center !important;
+        text-align: center !important;
+        font-size: 15px !important;
+    }
+
+    footer .footer-icons {
+        justify-content: center !important;
+    }
+
+    footer .developer {
+        text-align: center !important;
+    }
+}
+
